@@ -1,22 +1,21 @@
 "use strict";
 
-// 
-// const res = confirm(`Ты здесь?`);
-// console.log(res);
-
-// const answer = +prompt(`Вам есть 18?`, `18`);
-// console.log(typeof(answer));
-
-// const ansvers = [];
-// ansvers[0] = prompt(`Как ваше имя?`, ``);
-// ansvers[1] = prompt(`Как ваша фамилия?`, ``);
-// ansvers[2] = +prompt(`Сколько вам лет?`, ``);
+const numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '');
 
 
-// console.log(ansvers);
+const personalMovieDB = {
+count: numberOfFilms,
+movies: {},
+actors: {},
+genres: [],
+privat: false
+};
 
-let incr = 10,
-    dcr = 10;
+const a = prompt('Один из просмотренных фильмов?', ''),
+      b = prompt('На сколько оцените его?', ''),
+      c = prompt('Один из просмотренных фильмов?', ''),
+      d = prompt('На сколько оцените его?', '');
 
-console.log(++incr);
-console.log(--dcr);
+ personalMovieDB.movies[a] = b;    
+ personalMovieDB.movies[c] = d;  
+ console.log(personalMovieDB);
